@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Number Guessing Game</h1>
+            <p>Guess a number between 1 and 15!</p>
+            <input type="number" id="number" placeholder="Guess a number"
+            min="1"
+            max="15">
+            <button onclick="checkGuess()">Guess</button>
+            <p id="message"></p>
+            <p id="attempt">Attempt : 0</p>
+            <button class="try" onclick="tryAgain()">Try Again</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
